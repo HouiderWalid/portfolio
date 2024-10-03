@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Death Note";
+    src: url("~/assets/font/death_note/death_note.ttf") format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Nerko";
+    src: url("~/assets/font/nerko/nerko_one_regular.ttf") format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Protest Guerrilla";
+    src: url("~/assets/font/protest_guerrilla/protest_guerrilla_regular.ttf") format('truetype');
+    font-weight: 600;
+}
