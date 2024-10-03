@@ -6,8 +6,8 @@
       <img alt="" class="absolute h-full object-cover" src="../public/intro-bg.jpg">
       <div class="absolute w-full h-full bg-black" style="opacity: .5"></div>
       <div class="absolute"></div>
-      <div id="header" :class="{'bg-black':isBurgerOpen}"
-           class="fixed top-0 w-full flex flex-col items-center py-10 sm:justify-center gap-10 text-white z-10">
+      <div id="header"
+           class="md:bg-transparent bg-black fixed top-0 w-full flex flex-col items-center py-10 sm:justify-center gap-10 text-white z-10">
         <BurgerMenu v-model="isBurgerOpen" class="relative sm:hidden block z-50"/>
         <ul :class="{'hidden sm:flex': !isBurgerOpen}" class="flex sm:flex-row flex-col gap-8 sm:h-10 font-bold">
           <li class="flex items-center justify-center">
@@ -457,7 +457,7 @@ export default {
           }
 
         } else {
-          header.classList.remove('bg-black')
+          header.classList.remove('md:bg-black')
         }
       })
     }
