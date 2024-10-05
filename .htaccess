@@ -1,4 +1,16 @@
+<Directory "/home/houiwngf/public_html">
+    Order Deny,Allow
+    Deny from all
+</Directory>
+
+<Directory "/home/houiwngf/public_html/.output/public">
+    Order Allow,Deny
+    Allow from all
+</Directory>
+
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]
+
+RewriteRule ^$ .output/public/ [L]
+
+RewriteCond %{REQUEST_URI} !^/\.output/public/
+RewriteRule ^(.*)$ .output/public/$1 [L]

@@ -6,8 +6,8 @@
       <img alt="" class="absolute h-full object-cover" src="../public/intro-bg.jpg">
       <div class="absolute w-full h-full bg-black" style="opacity: .5"></div>
       <div class="absolute"></div>
-      <div id="header"
-           class="md:bg-transparent bg-black fixed top-0 w-full flex flex-col items-center py-10 sm:justify-center gap-10 text-white z-10">
+      <div id="header" :class="{'md:bg-transparent': !showDarkBg, 'md:py-10': inViewHeight}"
+           class="bg-black fixed top-0 w-full py-4 flex flex-col items-center py-10 sm:justify-center gap-10 text-white z-10">
         <BurgerMenu v-model="isBurgerOpen" class="relative sm:hidden block z-50"/>
         <ul :class="{'hidden sm:flex': !isBurgerOpen}" class="flex sm:flex-row flex-col gap-8 sm:h-10 font-bold">
           <li class="flex items-center justify-center">
@@ -143,11 +143,11 @@
         </div>
       </div>
       <div class="flex gap-10 mt-16 flex-col sm:flex-row">
-        <div class="flex justify-end">
-          <button class="border-4 border-gray-800 hover:text-gray-600 hover:border-gray-600 py-3 w-60 px-6 font-bold">
+<!--        <div class="flex justify-end">
+          <a href="#contact" class="flex justify-center border-4 border-gray-800 hover:text-gray-600 hover:border-gray-600 py-3 w-60 px-6 font-bold">
             HIRE ME
-          </button>
-        </div>
+          </a>
+        </div>-->
         <div class="flex">
           <button
               class="border-4 border-gray-800 bg-gray-800 hover:bg-gray-600 hover:border-gray-600 text-white py-3 w-60 px-6 font-bold">
@@ -360,7 +360,7 @@
       <p class="text-xl text-gray-500 max-w-xl text-center">
         Please, feel free to contact me for more information or any custom services you may need.
       </p>
-      <div class="max-w-xl w-full px-4 mt-8">
+<!--      <div class="max-w-xl w-full px-4 mt-8">
         <div class="relative z-0 w-full mb-5 group">
           <input id="floating_name"
                  class="block py-3 px-0 w-full text-white text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
@@ -405,7 +405,7 @@
             class="w-full mt-16 border-4 border-gray-800 bg-green-500 hover:bg-gray-600 hover:border-gray-600 text-white py-3 w-60 px-6 font-bold">
           SUBMIT
         </button>
-      </div>
+      </div>-->
       <div class="flex md:flex-row gap-10 flex-col justify-around max-w-2xl w-full mt-12">
         <div class="flex flex-col items-center gap-4">
           <svg-icon :path="mdiPhone" class="text-white" type="mdi"/>
@@ -438,14 +438,27 @@ export default {
       mdiEmail,
       mdiMapMarker,
       section: null,
-      isBurgerOpen: false
+      isBurgerOpen: false,
+      scrollHeight: window?.scrollY ?? 0,
+      viewHeight: window.innerHeight
+    }
+  },
+  computed: {
+    showDarkBg() {
+      return this.scrollHeight > 0
+    },
+    inViewHeight(){
+      return this.viewHeight > this.scrollHeight
     }
   },
   mounted() {
     let header = document.getElementById('header')
-    if (header) {
-      document.addEventListener('scroll', function (e) {
-        if (window.scrollY > 0) {
+    if (document) {
+      document.addEventListener('scroll', (e) => {
+        console.log(window.scrollY)
+        this.scrollHeight = window.scrollY
+/*        if (window.scrollY > 0) {
+          console.log('window.scrollY', window.scrollY)
           header.classList.add('md:bg-black')
 
           if (window.scrollY > window.innerHeight) {
@@ -458,7 +471,7 @@ export default {
 
         } else {
           header.classList.remove('md:bg-black')
-        }
+        }*/
       })
     }
 
