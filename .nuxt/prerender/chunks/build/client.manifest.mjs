@@ -1,10 +1,10 @@
 const client_manifest = {
-  "_DBVbfebz.js": {
+  "_CdDAqJ1c.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DBVbfebz.js",
+    "file": "CdDAqJ1c.js",
     "name": "vue.65b7bcda",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -33,7 +33,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BSIQxP3c.js",
+    "file": "CvxTkpdr.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
@@ -47,7 +47,8 @@ const client_manifest = {
       "intro-bg.DCHHKMCM.jpg",
       "43239991.DkYmBkun.png",
       "simo_travel.Bh7VMY2h.png",
-      "dash.maxcom.network.BVKA8a_z.png"
+      "dash.maxcom.network.BVKA8a_z.png",
+      "maxcom.network.Dw1S95ng.png"
     ]
   },
   "default.CJlT2mHE.css": {
@@ -80,18 +81,24 @@ const client_manifest = {
     "prefetch": true,
     "mimeType": "image/png"
   },
+  "maxcom.network.Dw1S95ng.png": {
+    "file": "maxcom.network.Dw1S95ng.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
   "node_modules/nuxt/dist/app/components/error-404.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "dr8Vl2zd.js",
+    "file": "COl6Fj-B.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DBVbfebz.js"
+      "_CdDAqJ1c.js"
     ],
     "css": [
       "error-404.DXySnQZL.css"
@@ -108,12 +115,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "PkruYrBQ.js",
+    "file": "DQWu89PW.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DBVbfebz.js",
+      "_CdDAqJ1c.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
@@ -131,7 +138,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Ctp5NxrU.js",
+    "file": "Cz_YN9Mi.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -141,7 +148,7 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/components/error-500.vue"
     ],
     "css": [
-      "entry.DSXghosU.css"
+      "entry.rZ7HzOyq.css"
     ],
     "assets": [
       "death_note.DSxoIBRA.ttf",
@@ -149,8 +156,8 @@ const client_manifest = {
       "protest_guerrilla_regular.DLF_AtFO.ttf"
     ]
   },
-  "entry.DSXghosU.css": {
-    "file": "entry.DSXghosU.css",
+  "entry.rZ7HzOyq.css": {
+    "file": "entry.rZ7HzOyq.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -175,7 +182,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "9vNv4OoR.js",
+    "file": "PgCEDTPz.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -212,6 +219,13 @@ const client_manifest = {
     "mimeType": "image/jpeg",
     "file": "intro-bg.DCHHKMCM.jpg",
     "src": "public/intro-bg.jpg"
+  },
+  "public/maxcom.network.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "maxcom.network.Dw1S95ng.png",
+    "src": "public/maxcom.network.png"
   },
   "public/simo_travel.png": {
     "resourceType": "image",

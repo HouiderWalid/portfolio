@@ -143,14 +143,15 @@
         </div>
       </div>
       <div class="flex gap-10 mt-16 flex-col sm:flex-row">
-<!--        <div class="flex justify-end">
-          <a href="#contact" class="flex justify-center border-4 border-gray-800 hover:text-gray-600 hover:border-gray-600 py-3 w-60 px-6 font-bold">
-            HIRE ME
-          </a>
-        </div>-->
+        <!--        <div class="flex justify-end">
+                  <a href="#contact" class="flex justify-center border-4 border-gray-800 hover:text-gray-600 hover:border-gray-600 py-3 w-60 px-6 font-bold">
+                    HIRE ME
+                  </a>
+                </div>-->
         <div class="flex">
           <button
-              class="border-4 border-gray-800 bg-gray-800 hover:bg-gray-600 hover:border-gray-600 text-white py-3 w-60 px-6 font-bold">
+              class="border-4 border-gray-800 bg-gray-800 hover:bg-gray-600 hover:border-gray-600 text-white py-3 w-60 px-6 font-bold"
+              @click="downloadCV">
             DOWNLOAD CV
           </button>
         </div>
@@ -325,7 +326,7 @@
         </div>
 
         <div class="flex flex-col gap-10">
-          <h3 class="text-xl text-gray-500 border-b-2 border-b-gray-500">Affiliate Network Platform</h3>
+          <h3 class="text-xl text-gray-500 border-b-2 border-b-gray-500">Affiliate Network Dashboard</h3>
           <div class="flex gap-20 md:flex-row flex-col">
             <div class="flex flex-col items-center justify-center gap-8">
 
@@ -349,6 +350,29 @@
           </div>
         </div>
 
+        <div class="flex flex-col gap-10">
+          <h3 class="text-xl text-gray-500 border-b-2 border-b-gray-500">Affiliate Network Front Page</h3>
+          <div class="flex gap-20 md:flex-row flex-col">
+            <div class="flex flex-col items-center justify-center gap-8">
+
+              <img alt="" class="w-52 rounded-lg" src="../public/maxcom.network.png">
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-col items-center md:items-start">
+                <h6 class="text-lg text-gray-500">link</h6>
+                <a class="text-md" href="https://maxcom.network" target="_blank">https://maxcom.network</a>
+              </div>
+              <div class="flex flex-col items-center md:items-start">
+                <h6 class="text-lg text-gray-500">skills</h6>
+                <ul class="text-md md:text-start text-center">
+                  <li>JQuery</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -360,52 +384,52 @@
       <p class="text-xl text-gray-500 max-w-xl text-center">
         Please, feel free to contact me for more information or any custom services you may need.
       </p>
-<!--      <div class="max-w-xl w-full px-4 mt-8">
-        <div class="relative z-0 w-full mb-5 group">
-          <input id="floating_name"
-                 class="block py-3 px-0 w-full text-white text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
-                 name="floating_name"
-                 placeholder=" "
-                 required type="text"/>
-          <label
-              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-              for="floating_name">Name</label>
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-          <input id="floating_email"
-                 class="block py-3 px-0 w-full text-white text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
-                 name="floating_email"
-                 placeholder=" "
-                 required type="email"/>
-          <label
-              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-              for="floating_email">Email</label>
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-          <input id="floating_subject"
-                 class="block py-3 px-0 w-full text-white text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
-                 name="floating_subject"
-                 placeholder=" "
-                 required type="text"/>
-          <label
-              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-              for="floating_subject">Subject</label>
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-          <textarea id="floating_message"
-                    class="block py-3 px-0 text-white w-full text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
-                    name="floating_message" placeholder=" "
-                    required
-                    rows="5" type="text"/>
-          <label
-              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-              for="floating_message">Message</label>
-        </div>
-        <button
-            class="w-full mt-16 border-4 border-gray-800 bg-green-500 hover:bg-gray-600 hover:border-gray-600 text-white py-3 w-60 px-6 font-bold">
-          SUBMIT
-        </button>
-      </div>-->
+      <!--      <div class="max-w-xl w-full px-4 mt-8">
+              <div class="relative z-0 w-full mb-5 group">
+                <input id="floating_name"
+                       class="block py-3 px-0 w-full text-white text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                       name="floating_name"
+                       placeholder=" "
+                       required type="text"/>
+                <label
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    for="floating_name">Name</label>
+              </div>
+              <div class="relative z-0 w-full mb-5 group">
+                <input id="floating_email"
+                       class="block py-3 px-0 w-full text-white text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                       name="floating_email"
+                       placeholder=" "
+                       required type="email"/>
+                <label
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    for="floating_email">Email</label>
+              </div>
+              <div class="relative z-0 w-full mb-5 group">
+                <input id="floating_subject"
+                       class="block py-3 px-0 w-full text-white text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                       name="floating_subject"
+                       placeholder=" "
+                       required type="text"/>
+                <label
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    for="floating_subject">Subject</label>
+              </div>
+              <div class="relative z-0 w-full mb-5 group">
+                <textarea id="floating_message"
+                          class="block py-3 px-0 text-white w-full text-md bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                          name="floating_message" placeholder=" "
+                          required
+                          rows="5" type="text"/>
+                <label
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    for="floating_message">Message</label>
+              </div>
+              <button
+                  class="w-full mt-16 border-4 border-gray-800 bg-green-500 hover:bg-gray-600 hover:border-gray-600 text-white py-3 w-60 px-6 font-bold">
+                SUBMIT
+              </button>
+            </div>-->
       <div class="flex md:flex-row gap-10 flex-col justify-around max-w-2xl w-full mt-12">
         <div class="flex flex-col items-center gap-4">
           <svg-icon :path="mdiPhone" class="text-white" type="mdi"/>
@@ -447,31 +471,24 @@ export default {
     showDarkBg() {
       return this.scrollHeight > 0
     },
-    inViewHeight(){
+    inViewHeight() {
       return this.viewHeight > this.scrollHeight
     }
   },
+  methods: {
+    downloadCV() {
+      const link = document.createElement('a');
+      link.href = 'cv.pdf';  // Replace with your file URL
+      link.download = 'cv.pdf';  // The name of the file to download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  },
   mounted() {
-    let header = document.getElementById('header')
     if (document) {
       document.addEventListener('scroll', (e) => {
-        console.log(window.scrollY)
         this.scrollHeight = window.scrollY
-/*        if (window.scrollY > 0) {
-          console.log('window.scrollY', window.scrollY)
-          header.classList.add('md:bg-black')
-
-          if (window.scrollY > window.innerHeight) {
-            header.classList.add('py-4')
-            header.classList.remove('py-10')
-          } else {
-            header.classList.remove('py-4')
-            header.classList.add('py-10')
-          }
-
-        } else {
-          header.classList.remove('md:bg-black')
-        }*/
       })
     }
 
@@ -479,13 +496,11 @@ export default {
       let elementTarget = document.getElementById(id)
       let elementObserver = new IntersectionObserver(([entry]) => {
 
-        console.log('entry.target.id', entry.target.id)
-
-        if (entry.intersectionRatio > 0) {
+        if (entry.intersectionRatio > 0.5) {
           this.section = entry.target.id
         }
 
-      }, {threshold: 0})
+      }, {threshold: 0.5})
       elementObserver.observe(elementTarget)
     })
   },
