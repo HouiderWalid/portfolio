@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/c91d826f-0336-4331-a5e3-569a57c7cad3/maxcom-shop-dash-screenshot.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250602%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250602T175630Z&X-Amz-Expires=86400&X-Amz-Signature=124d9a48f180a6e2fa26486d67718ada6343e24f5858823bcb1301ca4e2a311a&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22maxcom-shop-dash-screenshot.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

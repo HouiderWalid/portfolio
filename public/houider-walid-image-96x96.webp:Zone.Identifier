@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/ead8b0c3-75ff-45d8-b696-bc19916e40b3/houider-walid-image.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250602%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250602T175150Z&X-Amz-Expires=86400&X-Amz-Signature=59f8bf5c14c264e18bfaa7c4b93539a2e06d51b0c58149c00e296ea3355745e5&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22houider-walid-image.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

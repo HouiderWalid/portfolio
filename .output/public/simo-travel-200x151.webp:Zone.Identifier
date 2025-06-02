@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/93f44429-67e2-4352-b8e0-2af4cc4aab1f/simo-travel.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250602%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250602T175415Z&X-Amz-Expires=86400&X-Amz-Signature=3e14d2bd02410091c804397449c5b062c3bc9e85d12cb2abd7fafad39161ac35&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22simo-travel.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

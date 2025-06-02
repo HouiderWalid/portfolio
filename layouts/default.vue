@@ -1,36 +1,49 @@
 <template>
-  <div style="font-family: 'Protest Guerrilla'">
+  <div>
     <!-- the margin buttom below is for the scroll observer to detect the intersection -->
     <section id="home" class="h-screen w-full flex flex-col justify-center items-center bg-black"
              style="margin-bottom: 1px">
-      <img alt="" class="absolute h-full object-cover" src="../public/intro-bg.jpg">
+      <picture class="w-full flex justify-center">
+        <source media="(max-width: 600px)" srcset="../public/hero-image-600x400.webp">
+        <source media="(max-width: 900px)" srcset="../public/hero-image-900x600.webp">
+        <img alt="Houider Walid Portfolio" class="absolute h-full object-cover" width="1351" height="900" src="../public/hero-image-1400x900.webp">
+      </picture>
+<!--      <NuxtImg
+          src="/hero-image-1400x900.webp"
+          alt="Houider Walid Portfolio"
+          class="absolute h-full object-cover flex justify-center"
+          width="1351"
+          height="900"
+          sizes="(max-width: 600px) 100vw, (max-width: 900px) 90vw, 1351px"
+          format="webp"
+      />-->
       <div class="absolute w-full h-full bg-black" style="opacity: .5"></div>
       <div class="absolute"></div>
       <div id="header" :class="{'md:bg-transparent': !showDarkBg, 'md:py-10': inViewHeight}"
            class="bg-black fixed top-0 w-full py-4 flex flex-col items-center py-10 sm:justify-center gap-10 text-white z-10">
-        <BurgerMenu v-model="isBurgerOpen" class="relative sm:hidden block z-50"/>
-        <ul :class="{'hidden sm:flex': !isBurgerOpen}" class="flex sm:flex-row flex-col gap-8 sm:h-10 font-bold">
+        <BurgerMenu v-model="data.isBurgerOpen" class="relative sm:hidden block z-50"/>
+        <ul :class="{'hidden sm:flex': !data.isBurgerOpen}" class="flex sm:flex-row flex-col gap-8 sm:h-10 font-bold">
           <li class="flex items-center justify-center">
-            <a :class="{'text-green-400': section === 'home'}" href="#home">Home</a>
+            <a :class="{'text-green-400': data.section === 'home'}" href="#home">Home</a>
           </li>
           <li class="flex items-center justify-center">
-            <a :class="{'text-green-400': section === 'about'}" href="#about">About</a>
+            <a :class="{'text-green-400': data.section === 'about'}" href="#about">About</a>
           </li>
           <li class="flex items-center justify-center">
-            <a :class="{'text-green-400': section === 'resume'}" href="#resume">Resume</a>
+            <a :class="{'text-green-400': data.section === 'resume'}" href="#resume">Resume</a>
           </li>
           <li class="flex items-center justify-center">
-            <a :class="{'text-green-400': section === 'portfolio'}" href="#portfolio">Portfolio</a>
+            <a :class="{'text-green-400': data.section === 'portfolio'}" href="#portfolio">Portfolio</a>
           </li>
           <li class="flex items-center justify-center">
-            <a :class="{'text-green-400': section === 'contact'}" href="#contact">Contact</a>
+            <a :class="{'text-green-400': data.section === 'contact'}" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
       <section class="flex flex-col text-white gap-10 my-auto" style="z-index: 1">
         <h1 class="text-8xl flex flex-col items-center gap-5">
           <span class="text-2xl font-bold text-green-500">HELLO, I'M</span>
-          <span class="text-center">Houider Walid</span>
+          <span class="text-center font-bold">Houider Walid</span>
           <span class="text-xl">FULL-STACK WEB DEVELOPER</span>
         </h1>
         <div class="flex justify-center">
@@ -44,11 +57,11 @@
     <section id="about" class="flex flex-col items-center justify-center py-20 gap-10 bg-gray-100">
       <h2 class="flex flex-col items-center text-gray-800 text-4xl font-bold">
         <span class="text-xl text-green-500 tracking-widest">ABOUT</span>
-        Let me introduce myself.
+        <span class="text-center">Let me introduce myself.</span>
       </h2>
       <div class="flex flex-col md:flex-row items-center py-6 max-w-3xl gap-9">
-        <img alt="" class="w-24 h-24" src="../public/43239991.png" style="border-radius: 50%">
-        <p class="text-xl text-gray-500 mx-4 md:mx-0">
+        <img alt="Houider Walid Image" width="96" height="96" src="../public/houider-walid-image-96x96.webp" style="border-radius: 50%">
+        <p class="text-xl text-gray-500 md:text-start text-center mx-4 md:mx-0">
           I'm a full stack web developer, with 4 years of experience, I'm mostly good at laravel/php and vueJs,
           but i have good knowledge on several languages/frameworks, so don't hesitate to contact me about anything.
           what i do like in my projects is clarity and simplicity.
@@ -82,10 +95,10 @@
           <div class="flex flex-col">
             <span class="font-bold mb-2 text-gray-800">PHP</span>
             <div class="h-1.5 bg-gray-400 w-80">
-              <div class="relative h-full bg-gray-700 w-4/5">
+              <div class="relative h-full bg-gray-700 w-[95%]">
                 <div
                     class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                  80%
+                  95%
                   <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
                 </div>
               </div>
@@ -94,31 +107,7 @@
           <div class="flex flex-col">
             <span class="font-bold mb-2 text-gray-800">WORDPRESS</span>
             <div class="h-1.5 bg-gray-400 w-80">
-              <div class="relative h-full bg-gray-700 w-2/4">
-                <div
-                    class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                  50%
-                  <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <span class="font-bold mb-2 text-gray-800">JAVASCRIPT</span>
-            <div class="h-1.5 bg-gray-400 w-80">
-              <div class="relative h-full bg-gray-700 w-4/5">
-                <div
-                    class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                  80%
-                  <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <span class="font-bold mb-2 text-gray-800">VUEJS</span>
-            <div class="h-1.5 bg-gray-400 w-80">
-              <div class="relative h-full bg-gray-700 w-4/6">
+              <div class="relative h-full bg-gray-700 w-[70%]">
                 <div
                     class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
                   70%
@@ -127,13 +116,37 @@
               </div>
             </div>
           </div>
+          <div class="flex flex-col">
+            <span class="font-bold mb-2 text-gray-800">JAVASCRIPT</span>
+            <div class="h-1.5 bg-gray-400 w-80">
+              <div class="relative h-full bg-gray-700 w-[95%]">
+                <div
+                    class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
+                  95%
+                  <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold mb-2 text-gray-800">VUEJS</span>
+            <div class="h-1.5 bg-gray-400 w-80">
+              <div class="relative h-full bg-gray-700 w-[90%]">
+                <div
+                    class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
+                  90%
+                  <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="flex flex-col mb-2 text-gray-800">
             <span class="font-bold mb-2">LARAVEL</span>
             <div class="h-1.5 bg-gray-400 w-80">
-              <div class="relative h-full bg-gray-700 w-4/5">
+              <div class="relative h-full bg-gray-700 w-[95%]">
                 <div
                     class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                  80%
+                  95%
                   <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
                 </div>
               </div>
@@ -161,7 +174,7 @@
     <section id="resume" class="flex flex-col items-center justify-center py-20 gap-10 bg-gray-200">
       <h2 class="flex flex-col items-center text-gray-800 text-4xl font-bold">
         <span class="text-xl text-green-500 tracking-widest">RESUME</span>
-        More of my credentials
+        <span class="text-center">More of my credentials</span>
       </h2>
 
       <h3 class="my-8 text-2xl text-green-500">Education</h3>
@@ -303,19 +316,19 @@
       </h2>
       <div class="my-24 flex flex-col gap-20 px-4">
         <div class="flex flex-col gap-10">
-          <h3 class="text-xl text-gray-500 border-b-2 border-b-gray-500">Excursion Website</h3>
+          <h3 class="text-xl text-gray-500 border-b-2 md:text-start text-center border-b-gray-500">Excursion Website</h3>
           <div class="flex gap-20 md:flex-row flex-col">
             <div class="flex flex-col items-center justify-center gap-8">
 
-              <img alt="" class="w-52 rounded-lg" src="../public/simo_travel.png">
+              <img alt="Excursion And Travel Website" class="w-48 rounded-lg" width="200" height="151" src="../public/simo-travel-200x151.webp">
             </div>
             <div class="flex flex-col gap-2">
               <div class="flex flex-col items-center md:items-start">
-                <h6 class="text-lg text-gray-500">link</h6>
+                <span class="text-lg text-gray-500">link</span>
                 <a class="text-md" href="https://letstravel.houiderwalid.com" target="_blank">https://letstravel.houiderwalid.com</a>
               </div>
               <div class="flex flex-col items-center md:items-start">
-                <h6 class="text-lg text-gray-500">skills</h6>
+                <span class="text-lg text-gray-500">skills</span>
                 <ul class="text-md md:text-start text-center">
                   <li>Wordpress</li>
                   <li>tailwind</li>
@@ -326,22 +339,21 @@
         </div>
 
         <div class="flex flex-col gap-10">
-          <h3 class="text-xl text-gray-500 border-b-2 border-b-gray-500">Affiliate Network Dashboard</h3>
+          <h3 class="text-xl text-gray-500 border-b-2 md:text-start text-center border-b-gray-500">Seller Platform Dashboard</h3>
           <div class="flex gap-20 md:flex-row flex-col">
             <div class="flex flex-col items-center justify-center gap-8">
-
-              <img alt="" class="w-52 rounded-lg" src="../public/dash.maxcom.network.png">
+              <img alt="Seller Store Platform" class="w-48 rounded-lg" width="200" height="101" src="../public/maxcom-shop-dash-screenshot-200x101.webp">
             </div>
             <div class="flex flex-col gap-2">
               <div class="flex flex-col items-center md:items-start">
-                <h6 class="text-lg text-gray-500">link</h6>
-                <a class="text-md" href="https://dash.maxcom.network" target="_blank">https://dash.maxcom.network</a>
+                <span class="text-lg text-gray-500">link</span>
+                <a class="text-md" href="https://dash.maxcom.store" target="_blank">https://dash.maxcom.store</a>
               </div>
               <div class="flex flex-col items-center md:items-start">
-                <h6 class="text-lg text-gray-500">skills</h6>
+                <span class="text-lg text-gray-500">skills</span>
                 <ul class="text-md md:text-start text-center">
                   <li>VueJs</li>
-                  <li>Bootstrap</li>
+                  <li>Tailwind</li>
                   <li>Vuetify</li>
                   <li>Laravel</li>
                 </ul>
@@ -351,35 +363,33 @@
         </div>
 
         <div class="flex flex-col gap-10">
-          <h3 class="text-xl text-gray-500 border-b-2 border-b-gray-500">Affiliate Network Front Page</h3>
+          <h3 class="text-xl text-gray-500 border-b-2 md:text-start text-center border-b-gray-500">Seller Platform Front Page</h3>
           <div class="flex gap-20 md:flex-row flex-col">
             <div class="flex flex-col items-center justify-center gap-8">
-
-              <img alt="" class="w-52 rounded-lg" src="../public/maxcom.network.png">
+              <img alt="Seller Store Front Page" class="w-48 rounded-lg" width="200" height="101" src="../public/maxcom-shop-screenshot-200x101.webp">
             </div>
             <div class="flex flex-col gap-2">
               <div class="flex flex-col items-center md:items-start">
-                <h6 class="text-lg text-gray-500">link</h6>
-                <a class="text-md" href="https://maxcom.network" target="_blank">https://maxcom.network</a>
+                <span class="text-lg text-gray-500">link</span>
+                <a class="text-md" href="https://maxcom.store" target="_blank">https://maxcom.store</a>
               </div>
               <div class="flex flex-col items-center md:items-start">
-                <h6 class="text-lg text-gray-500">skills</h6>
+                <span class="text-lg text-gray-500">skills</span>
                 <ul class="text-md md:text-start text-center">
-                  <li>JQuery</li>
-                  <li>Bootstrap</li>
+                  <li>Nuxt</li>
+                  <li>Tailwind</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="contact" class="flex flex-col items-center justify-center py-20 gap-10 bg-gray-800">
       <h2 class="flex flex-col items-center text-white text-4xl font-bold">
         <span class="text-xl text-green-500 tracking-widest">CONTACT</span>
-        I'd Love To Hear From You
+        <span class="text-center">I'd Love To Hear From You</span>
       </h2>
       <p class="text-xl text-gray-500 max-w-xl text-center">
         Please, feel free to contact me for more information or any custom services you may need.
@@ -446,66 +456,63 @@
   </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import SvgIcon from '@jamescoyle/vue-icon'
-import {mdiSchool, mdiBriefcase, mdiMapMarker, mdiPhone, mdiEmail} from '@mdi/js'
+import {mdiSchool, mdiBriefcase, mdiPhone, mdiEmail} from '@mdi/js'
 import BurgerMenu from "../components/BurgerMenu";
 
-export default {
-  name: "default",
-  components: {BurgerMenu, SvgIcon},
-  data() {
-    return {
-      mdiSchool,
-      mdiBriefcase,
-      mdiPhone,
-      mdiEmail,
-      mdiMapMarker,
-      section: null,
-      isBurgerOpen: false,
-      scrollHeight: window?.scrollY ?? 0,
-      viewHeight: window.innerHeight
-    }
-  },
-  computed: {
-    showDarkBg() {
-      return this.scrollHeight > 0
-    },
-    inViewHeight() {
-      return this.viewHeight > this.scrollHeight
-    }
-  },
-  methods: {
-    downloadCV() {
-      const link = document.createElement('a');
-      link.href = 'cv.pdf';  // Replace with your file URL
-      link.download = 'cv.pdf';  // The name of the file to download
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  },
-  mounted() {
-    if (document) {
-      document.addEventListener('scroll', (e) => {
-        this.scrollHeight = window.scrollY
-      })
-    }
+const data = reactive({
+  section: null,
+  isBurgerOpen: false,
+  scrollHeight: window?.scrollY ?? 0,
+  viewHeight: window.innerHeight
+})
 
-    ['home', 'about', 'resume', 'portfolio', 'contact'].forEach(id => {
-      let elementTarget = document.getElementById(id)
-      let elementObserver = new IntersectionObserver(([entry]) => {
-
-        if (entry.intersectionRatio > 0.5) {
-          this.section = entry.target.id
-        }
-
-      }, {threshold: 0.5})
-      elementObserver.observe(elementTarget)
-    })
+useHead({
+  htmlAttrs: {
+    lang: 'en'
   },
+  title: 'Houider Walid Portfolio',
+  meta:[
+    { name: 'description', content: 'A portfolio showcasing my web development projects and skills.' },
+    { property: 'og:title', content: 'My Web Dev Portfolio' },
+    { property: 'og:description', content: 'See the web projects I’ve built using Vue, Nuxt, and more.' },
+    { property: 'og:image', content: '../public/houider-walid-image-96x96.webp' },
+  ]
+})
+
+const showDarkBg = computed(() => data.scrollHeight > 0)
+const inViewHeight = computed(() => data.viewHeight > data.scrollHeight)
+
+function downloadCV() {
+  const link = document.createElement('a');
+  link.href = 'cv.pdf';  // Replace with your file URL
+  link.download = 'cv.pdf';  // The name of the file to download
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
-/**/
+
+onMounted(() => {
+  if (document) {
+    document.addEventListener('scroll', (e) => {
+      data.scrollHeight = window.scrollY
+    })
+  }
+
+  ['home', 'about', 'resume', 'portfolio', 'contact'].forEach(id => {
+    let elementTarget = document.getElementById(id)
+    let elementObserver = new IntersectionObserver(([entry]) => {
+
+      if (entry.intersectionRatio > 0.5) {
+        data.section = entry.target.id
+      }
+
+    }, {threshold: 0.5})
+    elementObserver.observe(elementTarget)
+  })
+})
+
 </script>
 
 <style>

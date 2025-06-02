@@ -1,21 +1,22 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///home/walid/website_projects/houider-walid/front/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/scule/dist/index.mjs';
-import defu, { defuFn } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/ufo/dist/index.mjs';
-import { createStorage, defineDriver, prefixStorage } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/drivers/fs.mjs';
-import fsDriver from 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/drivers/fs-lite.mjs';
-import lruCache from 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/drivers/lru-cache.mjs';
-import { toRouteMatcher, createRouter } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/radix3/dist/index.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener } from 'file:///home/nogba/walidProject/portfolio/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///home/nogba/walidProject/portfolio/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///home/nogba/walidProject/portfolio/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///home/nogba/walidProject/portfolio/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///home/nogba/walidProject/portfolio/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file:///home/nogba/walidProject/portfolio/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file:///home/nogba/walidProject/portfolio/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file:///home/nogba/walidProject/portfolio/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///home/nogba/walidProject/portfolio/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash } from 'file:///home/nogba/walidProject/portfolio/node_modules/ufo/dist/index.mjs';
+import { createStorage, defineDriver, prefixStorage } from 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/drivers/fs.mjs';
+import fsDriver from 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/drivers/fs-lite.mjs';
+import lruCache from 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/drivers/lru-cache.mjs';
+import { toRouteMatcher, createRouter } from 'file:///home/nogba/walidProject/portfolio/node_modules/radix3/dist/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/pathe/dist/index.mjs';
+import { dirname, resolve, isAbsolute } from 'file:///home/nogba/walidProject/portfolio/node_modules/pathe/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///home/nogba/walidProject/portfolio/node_modules/ipx/dist/index.mjs';
 
 function getEnv(key, opts) {
   const envKey = snakeCase(key).toUpperCase();
@@ -66,7 +67,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "f53c41e0-80c0-4b53-b067-092209171461",
+    "buildId": "81f47f07-9c37-4ff1-8d29-d31fde8d18c1",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -93,7 +94,19 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {},
+  "ipx": {
+    "baseURL": "/_ipx",
+    "alias": {},
+    "fs": {
+      "dir": [
+        "/home/nogba/walidProject/portfolio/public"
+      ]
+    },
+    "http": {
+      "domains": []
+    }
+  }
 };
 const envOptions = {
   prefix: "NITRO_",
@@ -139,7 +152,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/home/walid/website_projects/houider-walid/front/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/nogba/walidProject/portfolio/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -148,7 +161,7 @@ for (const asset of serverAssets) {
 }
 
 const normalizeFsKey = (item) => item.replaceAll(":", "_");
-const _47home_47walid_47website_projects_47houider_45walid_47front_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
+const _47home_47nogba_47walidProject_47portfolio_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
   const fs = fsDriver({ base: opts.base });
   const lru = lruCache({ max: 1e3 });
   return {
@@ -173,12 +186,12 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('internal:nuxt:prerender', _47home_47walid_47website_projects_47houider_45walid_47front_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/home/walid/website_projects/houider-walid/front/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/home/walid/website_projects/houider-walid/front/.nuxt/cache/nitro/prerender"}));
-storage.mount('data', fsDriver({"driver":"fsLite","base":"/home/walid/website_projects/houider-walid/front/.data/kv"}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/walid/website_projects/houider-walid/front","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/walid/website_projects/houider-walid/front/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/walid/website_projects/houider-walid/front/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/walid/website_projects/houider-walid/front/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('internal:nuxt:prerender', _47home_47nogba_47walidProject_47portfolio_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/home/nogba/walidProject/portfolio/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/home/nogba/walidProject/portfolio/.nuxt/cache/nitro/prerender"}));
+storage.mount('data', fsDriver({"driver":"fsLite","base":"/home/nogba/walidProject/portfolio/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/nogba/walidProject/portfolio","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/nogba/walidProject/portfolio/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/nogba/walidProject/portfolio/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/nogba/walidProject/portfolio/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -617,8 +630,23 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
+function defineNitroPlugin(def) {
+  return def;
+}
+
+const _JCjT7Y5T7t = defineNitroPlugin((nitroApp) => {
+  nitroApp.hooks.hook("render:response", (response) => {
+    if (response.body) {
+      response.body = response.body.replace(
+        /<link\s+.*?rel="stylesheet".*?href="(.*?)".*?>/g,
+        `<link rel="preload" as="style" href="$1" onload="this.onload=null;this.rel='stylesheet'">`
+      );
+    }
+  });
+});
+
 const plugins = [
-  
+  _JCjT7Y5T7t
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -770,11 +798,30 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _lazy_TM7B6M = () => import('./_/renderer.mjs');
+const _HpKVwn = lazyEventHandler(() => {
+  const opts = useRuntimeConfig().ipx || {};
+  const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
+  const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
+  const httpStorage = opts.http?.domains ? ipxHttpStorage({ ...opts.http }) : void 0;
+  if (!fsStorage && !httpStorage) {
+    throw new Error("IPX storage is not configured!");
+  }
+  const ipxOptions = {
+    ...opts,
+    storage: fsStorage || httpStorage,
+    httpStorage
+  };
+  const ipx = createIPX(ipxOptions);
+  const ipxHandler = createIPXH3Handler(ipx);
+  return useBase(opts.baseURL, ipxHandler);
+});
+
+const _lazy_p66TyD = () => import('./_/renderer.mjs');
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '/**', handler: _lazy_TM7B6M, lazy: true, middleware: false, method: undefined }
+  { route: '/_ipx/**', handler: _HpKVwn, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_p66TyD, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

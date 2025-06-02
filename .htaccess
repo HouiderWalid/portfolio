@@ -1,3 +1,26 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Cache common file types
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+
+  # Default fallback
+  ExpiresDefault "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|webp|png|jpg|jpeg|svg)$">
+    Header set Cache-Control "public, max-age=31557600, immutable"
+  </FilesMatch>
+</IfModule>
+
 <Directory "/home/houiwngf/public_html">
     Order Deny,Allow
     Deny from all

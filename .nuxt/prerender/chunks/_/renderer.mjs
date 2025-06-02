@@ -1,28 +1,29 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/h3/dist/index.mjs';
-import { stringify, uneval } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/devalue/index.js';
-import { joinRelativeURL, joinURL, withoutTrailingSlash } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/ufo/dist/index.mjs';
-import { propsToString, renderSSRHead } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/@unhead/ssr/dist/index.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///home/nogba/walidProject/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///home/nogba/walidProject/portfolio/node_modules/h3/dist/index.mjs';
+import { stringify, uneval } from 'file:///home/nogba/walidProject/portfolio/node_modules/devalue/index.js';
+import { joinRelativeURL, joinURL, withoutTrailingSlash } from 'file:///home/nogba/walidProject/portfolio/node_modules/ufo/dist/index.mjs';
+import { propsToString, renderSSRHead } from 'file:///home/nogba/walidProject/portfolio/node_modules/@unhead/ssr/dist/index.mjs';
 import { u as useRuntimeConfig, a as useNitroApp, b as useStorage, g as getRouteRules } from '../runtime.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/unhead/dist/index.mjs';
-import { version, unref } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/vue/index.mjs';
-import { defineHeadPlugin } from 'file:///home/walid/website_projects/houider-walid/front/node_modules/@unhead/shared/dist/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/ofetch/dist/node.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/destr/dist/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/hookable/dist/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/klona/dist/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/scule/dist/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/defu/dist/defu.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/ohash/dist/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/dist/index.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/unstorage/drivers/lru-cache.mjs';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/radix3/dist/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///home/nogba/walidProject/portfolio/node_modules/unhead/dist/index.mjs';
+import { version, unref } from 'file:///home/nogba/walidProject/portfolio/node_modules/vue/index.mjs';
+import { defineHeadPlugin } from 'file:///home/nogba/walidProject/portfolio/node_modules/@unhead/shared/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/ofetch/dist/node.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/destr/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/hookable/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/klona/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/scule/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/defu/dist/defu.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/ohash/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/radix3/dist/index.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file:///home/walid/website_projects/houider-walid/front/node_modules/pathe/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/pathe/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/ipx/dist/index.mjs';
 
 function defineRenderHandler(handler) {
   const runtimeConfig = useRuntimeConfig();
@@ -53,6 +54,18 @@ function defineRenderHandler(handler) {
     }
     return response.body;
   });
+}
+
+function buildAssetsDir() {
+  return useRuntimeConfig().app.buildAssetsDir;
+}
+function buildAssetsURL(...path) {
+  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
+}
+function publicAssetsURL(...path) {
+  const app = useRuntimeConfig().app;
+  const publicBase = app.cdnURL || app.baseURL;
+  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
 }
 
 const Vue3 = version[0] === "3";
@@ -131,18 +144,6 @@ const appTeleportAttrs = {"id":"teleports"};
 const componentIslands = false;
 
 const appId = "nuxt-app";
-
-function buildAssetsDir() {
-  return useRuntimeConfig().app.buildAssetsDir;
-}
-function buildAssetsURL(...path) {
-  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
-}
-function publicAssetsURL(...path) {
-  const app = useRuntimeConfig().app;
-  const publicBase = app.cdnURL || app.baseURL;
-  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
-}
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
