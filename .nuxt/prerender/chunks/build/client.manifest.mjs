@@ -1,10 +1,10 @@
 const client_manifest = {
-  "_bFcYWJ-o.js": {
+  "_BPTkGP7C.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "bFcYWJ-o.js",
+    "file": "BPTkGP7C.js",
     "name": "vue.65b7bcda",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -21,43 +21,43 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DZIe75q5.js",
+    "file": "BnFx8289.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_bFcYWJ-o.js",
+      "_BPTkGP7C.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "default.CJlT2mHE.css"
+      "default.Dp_AKfY8.css"
     ],
     "assets": [
-      "hero-image-600x400.Doh2IHrG.webp",
-      "hero-image-900x600.BpWR_6AB.webp",
-      "hero-image-1400x900.C1NjDxRH.webp"
+      "main_bg_600x338.BjS-maIq.webp",
+      "main_bg_900x506.D9176iLj.webp",
+      "main_bg_1650x928.C53LrhM4.webp"
     ]
   },
-  "default.CJlT2mHE.css": {
-    "file": "default.CJlT2mHE.css",
+  "default.Dp_AKfY8.css": {
+    "file": "default.Dp_AKfY8.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "hero-image-600x400.Doh2IHrG.webp": {
-    "file": "hero-image-600x400.Doh2IHrG.webp",
+  "main_bg_600x338.BjS-maIq.webp": {
+    "file": "main_bg_600x338.BjS-maIq.webp",
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/webp"
   },
-  "hero-image-900x600.BpWR_6AB.webp": {
-    "file": "hero-image-900x600.BpWR_6AB.webp",
+  "main_bg_900x506.D9176iLj.webp": {
+    "file": "main_bg_900x506.D9176iLj.webp",
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/webp"
   },
-  "hero-image-1400x900.C1NjDxRH.webp": {
-    "file": "hero-image-1400x900.C1NjDxRH.webp",
+  "main_bg_1650x928.C53LrhM4.webp": {
+    "file": "main_bg_1650x928.C53LrhM4.webp",
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/webp"
@@ -67,13 +67,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DcHQEBIP.js",
+    "file": "D93yg5f-.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_bFcYWJ-o.js"
+      "_BPTkGP7C.js"
     ],
     "css": [
       "error-404.DXySnQZL.css"
@@ -90,12 +90,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "4GkVwVF-.js",
+    "file": "Dgepc0LB.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_bFcYWJ-o.js",
+      "_BPTkGP7C.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
@@ -113,7 +113,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C5HR98mh.js",
+    "file": "D2VqREkI.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -123,14 +123,14 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/components/error-500.vue"
     ],
     "css": [
-      "entry.BP5ZkNue.css"
+      "entry.C6zPTAIc.css"
     ],
     "assets": [
       "protest_guerrilla_regular.DLF_AtFO.ttf"
     ]
   },
-  "entry.BP5ZkNue.css": {
-    "file": "entry.BP5ZkNue.css",
+  "entry.C6zPTAIc.css": {
+    "file": "entry.C6zPTAIc.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -145,7 +145,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "_LkVTw7q.js",
+    "file": "jQSZgnH7.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -153,35 +153,35 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "index.l9CJHO8v.css"
+      "index.DrZi3_YO.css"
     ]
   },
-  "index.l9CJHO8v.css": {
-    "file": "index.l9CJHO8v.css",
+  "index.DrZi3_YO.css": {
+    "file": "index.DrZi3_YO.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "public/hero-image-1400x900.webp": {
+  "public/main_bg_1650x928.webp": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/webp",
-    "file": "hero-image-1400x900.C1NjDxRH.webp",
-    "src": "public/hero-image-1400x900.webp"
+    "file": "main_bg_1650x928.C53LrhM4.webp",
+    "src": "public/main_bg_1650x928.webp"
   },
-  "public/hero-image-600x400.webp": {
+  "public/main_bg_600x338.webp": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/webp",
-    "file": "hero-image-600x400.Doh2IHrG.webp",
-    "src": "public/hero-image-600x400.webp"
+    "file": "main_bg_600x338.BjS-maIq.webp",
+    "src": "public/main_bg_600x338.webp"
   },
-  "public/hero-image-900x600.webp": {
+  "public/main_bg_900x506.webp": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/webp",
-    "file": "hero-image-900x600.BpWR_6AB.webp",
-    "src": "public/hero-image-900x600.webp"
+    "file": "main_bg_900x506.D9176iLj.webp",
+    "src": "public/main_bg_900x506.webp"
   }
 };
 
