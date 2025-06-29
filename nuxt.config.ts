@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       title: 'Full Stack Web Developer',
       meta: [
         { name: 'description', content: 'I\'m a full stack web developer, with 4 years of experience, I\'m mostly good at laravel/php and vueJs, but i have good knowledge on several languages/frameworks, so don\'t hesitate to contact me about anything. what i do like in my projects is clarity and simplicity.' },
+        { property: 'og:title', content: 'Full Stack Web Developer' },
         { property: 'og:image', content: 'https://houiderwalid.com/houider-walid-image.png' }
       ]
     }

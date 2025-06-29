@@ -131,7 +131,7 @@ const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
 
 const renderSSRHeadOptions = {"omitLineBreaks":false};
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"I'm a full stack web developer, with 4 years of experience, I'm mostly good at laravel/php and vueJs, but i have good knowledge on several languages/frameworks, so don't hesitate to contact me about anything. what i do like in my projects is clarity and simplicity."},{"property":"og:image","content":"https://houiderwalid.com/houider-walid-image.png"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Full Stack Web Developer"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"I'm a full stack web developer, with 4 years of experience, I'm mostly good at laravel/php and vueJs, but i have good knowledge on several languages/frameworks, so don't hesitate to contact me about anything. what i do like in my projects is clarity and simplicity."},{"property":"og:title","content":"Full Stack Web Developer"},{"property":"og:image","content":"https://houiderwalid.com/houider-walid-image.png"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Full Stack Web Developer"};
 
 const appRootTag = "div";
 
