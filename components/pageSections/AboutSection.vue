@@ -11,6 +11,92 @@ function downloadCV() {
   document.body.removeChild(link);
 }
 
+const skills = [
+  {
+    name: 'PHP / LARAVEL',
+    level: 95,
+    width: 'w-[95%]'
+  },
+  {
+    name: 'VUEJS / NUXT',
+    level: 90,
+    width: 'w-[90%]'
+  },
+  {
+    name: 'NODEJS / EXPRESS / FASTIFY',
+    level: 80,
+    width: 'w-[80%]'
+  },
+  {
+    name: 'JAVA / SPRING',
+    level: 70,
+    width: 'w-[70%]'
+  },
+  {
+    name: 'ANGULAR',
+    level: 70,
+    width: 'w-[70%]'
+  },
+  {
+    name: 'WORDPRESS',
+    level: 70,
+    width: 'w-[70%]'
+  },
+  {
+    name: 'REACTJS / NEXTJS',
+    level: 80,
+    width: 'w-[80%]'
+  },
+  {
+    name: 'REACT NATIVE / EXPO',
+    level: 70,
+    width: 'w-[70%]'
+  },
+  {
+    name: 'PYTHON / DJANGO',
+    level: 70,
+    width: 'w-[70%]'
+  },
+  {
+    name: 'MYSQL / MONGODB / PRISMA',
+    level: 95,
+    width: 'w-[95%]'
+  },
+  {
+    name: 'DOCKER / KUBERNETES',
+    level: 80,
+    width: 'w-[80%]'
+  },
+  {
+    name: 'JENKINS / GITHUB / GITLAB',
+    level: 80,
+    width: 'w-[80%]'
+  },
+  {
+    name: 'JEST / CYPRESS / VITEST',
+    level: 80,
+    width: 'w-[80%]'
+  }
+]
+
+const languages = [
+  {
+    name: 'ARABIC',
+    level: 100,
+    width: 'w-[100%]'
+  },
+  {
+    name: 'ENGLISH',
+    level: 90,
+    width: 'w-[90%]'
+  },
+  {
+    name: 'FRENCH',
+    level: 80,
+    width: 'w-[80%]'
+  }
+]
+
 </script>
 
 <template>
@@ -25,91 +111,58 @@ function downloadCV() {
       </p>
     </div>
     <div class="max-w-3xl flex w-full flex-col md:flex-row justify-between gap-20">
-      <div class="flex flex-col gap-5 w-full text-center md:text-start">
-        <div class="flex flex-col text-gray-500">
-          <span class="font-bold text-gray-800">FULLNAME:</span>
-          Houider Walid
+      <div class="flex flex-col gap-10 w-full text-center md:text-start">
+        <div class="flex flex-col gap-5 w-full">
+          <div class="flex flex-col text-gray-500">
+            <span class="font-bold text-gray-800">FULLNAME:</span>
+            Houider Walid
+          </div>
+          <div class="flex flex-col text-gray-500">
+            <span class="font-bold text-gray-800">BIRTH DATE:</span>
+            June 17,1993
+          </div>
+          <div class="flex flex-col text-gray-500">
+            <span class="font-bold text-gray-800">JOB:</span>
+            Freelancer, Full Stack Web Developer
+          </div>
+          <div class="flex flex-col text-gray-500">
+            <span class="font-bold text-gray-800">WEBSITE:</span>
+            www.houiderwalid.com
+          </div>
+          <div class="flex flex-col text-gray-500">
+            <span class="font-bold text-gray-800">EMAIL:</span>
+            houiderwalid@gmail.com
+          </div>
         </div>
-        <div class="flex flex-col text-gray-500">
-          <span class="font-bold text-gray-800">BIRTH DATE:</span>
-          June 17,1993
+        <div class="flex flex-col gap-7 w-full items-center">
+          <h3 class="font-bold text-2xl">Languages</h3>
+          <div v-for="language in languages" class="flex w-full flex-col">
+            <span class="font-bold mb-2 text-gray-800">{{ language.name }}</span>
+            <div class="h-1.5 bg-gray-400 w-80">
+              <div class="relative h-full bg-gray-700" :class="language.width">
+                <div
+                    class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
+                  {{ language.level }}%
+                  <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col text-gray-500">
-          <span class="font-bold text-gray-800">JOB:</span>
-          Freelancer, Full Stack Web Developer
-        </div>
-        <div class="flex flex-col text-gray-500">
-          <span class="font-bold text-gray-800">WEBSITE:</span>
-          www.houiderwalid.com
-        </div>
-        <div class="flex flex-col text-gray-500">
-          <span class="font-bold text-gray-800">EMAIL:</span>
-          houiderwalid@gmail.com
-        </div>
-
       </div>
       <div class="flex flex-col gap-7 w-full items-center">
-        <div class="flex flex-col">
-          <span class="font-bold mb-2 text-gray-800">PHP</span>
+        <div v-for="skill in skills" class="flex flex-col">
+          <span class="font-bold mb-2 text-gray-800">{{ skill.name }}</span>
           <div class="h-1.5 bg-gray-400 w-80">
-            <div class="relative h-full bg-gray-700 w-[95%]">
+            <div class="relative h-full bg-gray-700" :class="skill.width">
               <div
                   class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                95%
+                {{ skill.level }}%
                 <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col">
-          <span class="font-bold mb-2 text-gray-800">WORDPRESS</span>
-          <div class="h-1.5 bg-gray-400 w-80">
-            <div class="relative h-full bg-gray-700 w-[70%]">
-              <div
-                  class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                70%
-                <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-bold mb-2 text-gray-800">JAVASCRIPT</span>
-          <div class="h-1.5 bg-gray-400 w-80">
-            <div class="relative h-full bg-gray-700 w-[95%]">
-              <div
-                  class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                95%
-                <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-bold mb-2 text-gray-800">VUEJS</span>
-          <div class="h-1.5 bg-gray-400 w-80">
-            <div class="relative h-full bg-gray-700 w-[90%]">
-              <div
-                  class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                90%
-                <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col mb-2 text-gray-800">
-          <span class="font-bold mb-2">LARAVEL</span>
-          <div class="h-1.5 bg-gray-400 w-80">
-            <div class="relative h-full bg-gray-700 w-[95%]">
-              <div
-                  class="absolute flex justify-center bg-gray-800 text-xs bottom-0 right-0 rounded-md text-white px-2 py-1 mb-5">
-                95%
-                <div class="absolute border-x-8 border-t-8 border-transparent border-t-gray-800 mt-5 w-0 h-0"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
     <div class="flex gap-10 mt-16 flex-col sm:flex-row">

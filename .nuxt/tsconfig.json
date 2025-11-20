@@ -102,7 +102,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/f08a8fc3-5757-4d17-8e76-d32f0555d18f.json"
+        "./manifest/meta/ceb8caa4-fead-4797-ae60-4694dad3e6db.json"
       ],
       "#build": [
         "."
@@ -148,6 +148,8 @@
     "../**/*",
     "../node_modules/@nuxt/image/runtime",
     "../node_modules/@nuxt/image/dist/runtime",
+    "../node_modules/nuxt-icon/runtime",
+    "../node_modules/nuxt-icon/dist/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
@@ -160,6 +162,8 @@
     "../node_modules/nuxt/node_modules",
     "../node_modules/@nuxt/image/runtime/server",
     "../node_modules/@nuxt/image/dist/runtime/server",
+    "../node_modules/nuxt-icon/runtime/server",
+    "../node_modules/nuxt-icon/dist/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",

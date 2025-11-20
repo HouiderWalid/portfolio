@@ -23,6 +23,8 @@ import 'file:///home/nogba/walidProject/portfolio/node_modules/radix3/dist/index
 import 'node:fs';
 import 'node:url';
 import 'file:///home/nogba/walidProject/portfolio/node_modules/pathe/dist/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/@iconify/utils/lib/index.mjs';
+import 'file:///home/nogba/walidProject/portfolio/node_modules/unenv/runtime/npm/consola.mjs';
 import 'file:///home/nogba/walidProject/portfolio/node_modules/ipx/dist/index.mjs';
 
 function defineRenderHandler(handler) {

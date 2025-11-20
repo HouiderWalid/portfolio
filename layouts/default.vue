@@ -31,7 +31,6 @@
 
 import BurgerMenu from "~/components/BurgerMenu.vue";
 import HeroSection from "~/components/pageSections/HeroSection.vue";
-import ImageModal from "~/components/ImageModal.vue";
 
 const navItems = [
   {

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   ssr: false,
   //devtools: { enabled: true },
   css: ['~/assets/css/main.css', '~/assets/css/font.css'],
-  modules: ['@nuxt/image'],
+  modules: ['@nuxt/image', 'nuxt-icon'],
   app: {
     head: {
       title: 'Full Stack Web Developer',
