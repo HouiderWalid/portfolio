@@ -1,8 +1,6 @@
 <script setup lang="ts">
 
 import TitledSection from "~/components/pageSections/TitledSection.vue";
-import SvgIcon from "@jamescoyle/vue-icon/lib/svg-icon.vue";
-import {mdiGithub, mdiOpenInNew, mdiEye} from '@mdi/js'
 import ImageModal from "~/components/ImageModal.vue";
 
 const isModelOpen = ref(false);
@@ -23,6 +21,9 @@ const projects = [
     skills: [
       {
         name: 'Wordpress'
+      },
+      {
+        name: 'Elementor'
       },
       {
         name: 'Tailwind'
@@ -51,6 +52,15 @@ const projects = [
       },
       {
         name: 'Laravel'
+      },
+      {
+        name: 'Mysql'
+      },
+      {
+        name: 'Docker'
+      },
+      {
+        name: 'AWS'
       }
     ]
   },
@@ -70,6 +80,28 @@ const projects = [
       },
       {
         name: 'Tailwind'
+      }
+    ]
+  },
+  {
+    title: 'NextJs Taskify Dashboard',
+    links: {
+      github: 'https://github.com/HouiderWalid/taskify-next-frontend'
+    },
+    image: {
+      original: '/taskify-nextjs.png',
+      src: '/taskify-nextjs-508x257.webp',
+      alt: 'NextJs Taskify Dashboard'
+    },
+    skills: [
+      {
+        name: 'NextJs'
+      },
+      {
+        name: 'Tailwind'
+      },
+      {
+        name: 'Cypress'
       }
     ]
   }
@@ -97,8 +129,8 @@ function onModalToggle() {
           <img class="rounded-lg h-64 w-full object-cover" :src="project.image.src" :alt="project.image.alt"/>
           <div
               class="w-full hidden group-hover:flex justify-center bg-gray-800 bg-opacity-50 items-center h-full absolute top-0">
-            <svg-icon @click="displayImage(project.image.original)" :path="mdiEye" class="text-white cursor-pointer"
-                      size="25" type="mdi"/>
+            <Icon @click="displayImage(project.image.original)" name="mdi:eye" class="text-white cursor-pointer"
+                  size="25"/>
           </div>
         </div>
         <div class="m-2 flex flex-col gap-4">
@@ -106,18 +138,18 @@ function onModalToggle() {
             <span class="font-bold text-white text-xl">{{ project.title }}</span>
             <div v-if="project.links" class="flex gap-4">
               <a v-if="project.links.github" :href="project.links.github" target="_blank">
-                <svg-icon :path="mdiGithub" class="text-white" size="20" type="mdi"/>
+                <Icon name="mdi:github" class="text-white" size="20"/>
               </a>
               <a v-if="project.links.site" :href="project.links.site" target="_blank">
-                <svg-icon :path="mdiOpenInNew" class="text-white" size="20" type="mdi"/>
+                <Icon name="mdi:open-in-new" class="text-white" size="20" type="mdi"/>
               </a>
             </div>
           </div>
           <div class="flex flex-col gap-2">
             <span class="text-white">Skills</span>
-            <div class="flex gap-1">
+            <div class="flex gap-2 flex-wrap">
               <div v-for="skill in project.skills"
-                   class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-md border-blue-400">
+                   class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-md border-blue-400">
                 {{ skill.name }}
               </div>
             </div>

@@ -1,8 +1,6 @@
 <script setup lang="ts">
 
 import TitledSection from "~/components/pageSections/TitledSection.vue";
-import SvgIcon from "@jamescoyle/vue-icon/lib/svg-icon.vue";
-import {mdiPhone, mdiEmail} from '@mdi/js'
 
 </script>
 
@@ -13,12 +11,12 @@ import {mdiPhone, mdiEmail} from '@mdi/js'
     </p>
     <div class="flex md:flex-row gap-10 flex-col justify-around max-w-2xl w-full mt-12">
       <div class="flex flex-col items-center gap-4">
-        <svg-icon :path="mdiPhone" class="text-white" type="mdi"/>
+        <Icon name="mdi:phone" class="text-white" size="25"/>
         <span class="tracking-widest text-green-400">EMAIL ME AT</span>
         <span class="text-gray-500">houiderwalid@gmail.com</span>
       </div>
       <div class="flex flex-col items-center gap-4">
-        <svg-icon :path="mdiEmail" class="text-white" type="mdi"/>
+        <Icon name="mdi:email" class="text-white" size="25"/>
         <span class="tracking-widest text-green-400">CALL ME AT</span>
         <span class="text-gray-500">(+212) 673 904 623</span>
       </div>

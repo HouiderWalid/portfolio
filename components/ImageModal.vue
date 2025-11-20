@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import {mdiClose} from "@mdi/js";
-import SvgIcon from "@jamescoyle/vue-icon/lib/svg-icon.vue";
-
 const {modelValue, image} = defineProps(['modelValue', 'image']);
 const emit = defineEmits(['update:modelValue'])
 const isOpen = computed({
@@ -29,8 +26,8 @@ function close() {
 
       <div class="relative group bg-white rounded-lg shadow-sm w-fit">
         <img :src="image" alt="Image Display" class="rounded-lg">
-        <div @click="close" class="absolute cursor-pointer bg-gray-800 rounded-full top-0 group-hover:block hidden right-0 m-2 p-1">
-          <svg-icon :path="mdiClose" class="text-white" type="mdi"/>
+        <div @click="close" class="absolute cursor-pointer bg-gray-800 rounded-full justify-center items-center top-0 group-hover:flex hidden right-0 m-2 p-1">
+          <Icon name="mdi:close" class="text-white" />
         </div>
       </div>
     </div>

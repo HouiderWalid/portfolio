@@ -1,8 +1,6 @@
 <script setup lang="ts">
 
 import TitledSection from "~/components/pageSections/TitledSection.vue";
-import SvgIcon from "@jamescoyle/vue-icon/lib/svg-icon.vue";
-import {mdiSchool, mdiBriefcase} from '@mdi/js'
 </script>
 
 <template>
@@ -12,8 +10,9 @@ import {mdiSchool, mdiBriefcase} from '@mdi/js'
       <tr>
         <td class="border-e-2 border-e-gray-400 align-top relative">
           <div class="flex flex-col py-4 px-8 gap-1">
-            <div class="absolute right-0 p-3 rounded-full bg-gray-800" style="margin-inline-end: -24px">
-              <svg-icon :path="mdiSchool" class="text-white" type="mdi"></svg-icon>
+            <div class="absolute right-0 p-3 flex justify-center items-center rounded-full bg-gray-800"
+                 style="margin-inline-end: -24px">
+              <Icon name="mdi:school" class="text-white" size="25"></Icon>
             </div>
             <h4 class="text-end text-xl">Master</h4>
             <p class="text-end mb-0 text-md text-gray-500">October 2016 - June 2019</p>
@@ -32,8 +31,9 @@ import {mdiSchool, mdiBriefcase} from '@mdi/js'
       <tr>
         <td class="relative border-e-2 border-e-gray-400 align-top">
           <div class="flex flex-col py-4 px-8 gap-1">
-            <div class="absolute right-0 p-3 rounded-full bg-gray-800" style="margin-inline-end: -24px">
-              <svg-icon :path="mdiSchool" class="text-white" type="mdi"></svg-icon>
+            <div class="absolute right-0 p-3 flex justify-center items-center rounded-full bg-gray-800"
+                 style="margin-inline-end: -24px">
+              <Icon name="mdi:school" class="text-white" size="25"/>
             </div>
             <h4 class="text-end text-xl">Pre-Master Degree</h4>
             <p class="text-end mb-0 text-md text-gray-500">October 2013 - June 2016</p>
@@ -52,8 +52,9 @@ import {mdiSchool, mdiBriefcase} from '@mdi/js'
       <tr>
         <td class="relative border-e-2 border-e-gray-400 align-top">
           <div class="flex flex-col py-4 px-8 gap-1">
-            <div class="absolute right-0 p-3 rounded-full bg-gray-800" style="margin-inline-end: -24px">
-              <svg-icon :path="mdiSchool" class="text-white" type="mdi"></svg-icon>
+            <div class="absolute right-0 p-3 flex justify-center items-center rounded-full bg-gray-800"
+                 style="margin-inline-end: -24px">
+              <Icon name="mdi:school" class="text-white" size="25"/>
             </div>
             <h4 class="text-end text-xl">Bachelor</h4>
             <p class="text-end mb-0 text-md text-gray-500">September 2012 - June 2013</p>
@@ -78,8 +79,9 @@ import {mdiSchool, mdiBriefcase} from '@mdi/js'
       <tr>
         <td class="relative border-e-2 border-e-gray-400 align-top">
           <div class="flex flex-col py-4 px-8 gap-1">
-            <div class="absolute right-0 p-3 rounded-full bg-gray-800" style="margin-inline-end: -24px">
-              <svg-icon :path="mdiBriefcase" class="text-white" type="mdi"></svg-icon>
+            <div class="absolute right-0 p-3 flex justify-center items-center rounded-full bg-gray-800"
+                 style="margin-inline-end: -24px">
+              <Icon name="mdi:briefcase" class="text-white" size="25"/>
             </div>
             <h4 class="text-end text-xl">Full Stack Web Dev</h4>
             <p class="text-end mb-0 text-md text-gray-500">Since May 2021</p>
@@ -88,19 +90,26 @@ import {mdiSchool, mdiBriefcase} from '@mdi/js'
         <td>
           <div class="flex flex-col max-w-xl py-4 px-8 gap-4">
             <h3 class="text-lg border-b-2 pb-4 border-b-gray-400">Creation of an Affiliate Network</h3>
-            <ul class="text-md text-gray-500">
-              <li>Creation of dynamic sale page using Nuxt</li>
-              <li>Creation of a dashboard to manage users (affiliates, sellers...) using VueJs</li>
-              <li>Creation of the back-end using Laravel</li>
-            </ul>
+            <p class="text-md list-inside text-gray-500">
+              This project give sellers the tools they need to sell their products online from
+              providing a fast and dynamic landing pages to providing a tracking system for
+              their orders and connecting with their warehouses.
+              this project require a comprehensive set of skills like automation,
+              performance enhancement, traffic monitoring and complex problem solving.
+            </p>
+            <p class="text-md list-inside text-gray-500">
+              Project Tags: VueJs, Nuxt, Laravel, Php, Javascript, linux, Mysql, Html, Css,
+              Tailwind, Vuetify, AWS, Docker.
+            </p>
           </div>
         </td>
       </tr>
       <tr>
         <td class="relative border-e-2 border-e-gray-400 align-top">
           <div class="flex flex-col py-4 px-8 gap-1">
-            <div class="absolute right-0 p-3 rounded-full bg-gray-800" style="margin-inline-end: -24px">
-              <svg-icon :path="mdiBriefcase" class="text-white" type="mdi"></svg-icon>
+            <div class="absolute right-0 p-3 flex justify-center items-center rounded-full bg-gray-800"
+                 style="margin-inline-end: -24px">
+              <Icon name="mdi:briefcase" class="text-white" size="25"/>
             </div>
             <h4 class="text-end text-xl">Web and mobile Developer</h4>
             <p class="text-end mb-0 text-md text-gray-500">May 2019 - February 2020</p>
@@ -120,8 +129,9 @@ import {mdiSchool, mdiBriefcase} from '@mdi/js'
       <tr>
         <td class="relative border-e-2 border-e-gray-400 align-top">
           <div class="flex flex-col py-4 px-8 gap-1">
-            <div class="absolute right-0 p-3 rounded-full bg-gray-800" style="margin-inline-end: -24px">
-              <svg-icon :path="mdiBriefcase" class="text-white" type="mdi"></svg-icon>
+            <div class="absolute right-0 p-3 flex justify-center items-center rounded-full bg-gray-800"
+                 style="margin-inline-end: -24px">
+              <Icon name="mdi:briefcase" class="text-white" size="25"/>
             </div>
             <h4 class="text-end text-xl">Project of end of education</h4>
             <p class="text-end mb-0 text-md text-gray-500">September 2018 - December 2018</p>
